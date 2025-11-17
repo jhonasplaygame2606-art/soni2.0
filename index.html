@@ -37,16 +37,16 @@
   const canvas = document.getElementById('gameCanvas');
   const ctx = canvas.getContext('2d');
 
-  // Áudios
+  // Áudios com sons diferentes
   const bgMusic = new Audio('https://cdn.pixabay.com/download/audio/2022/03/26/audio_0c16aa7a55.mp3?filename=summer-joy-11241.mp3');
   bgMusic.loop = true;
   bgMusic.volume = 0.3;
 
-  const jumpSound = new Audio('https://freesound.org/data/previews/331/331912_3248244-lq.mp3');
+  const jumpSound = new Audio('https://freesound.org/data/previews/331/331912_3248244-lq.mp3'); // som do pulo
   jumpSound.volume = 0.5;
 
-  const gameOverSound = new Audio('https://freesound.org/data/previews/331/331912_3248244-lq.mp3');
-  gameOverSound.volume = 0.5;
+  const gameOverSound = new Audio('https://freesound.org/data/previews/353/353142_5121236-lq.mp3'); // som do game over diferente
+  gameOverSound.volume = 0.7;
 
   // Jogador - cubo
   const player = {
